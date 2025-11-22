@@ -185,7 +185,7 @@ impl Repo for TheRepository {
 
             if !app {
                 return Err(RepoError {
-                    target: name.clone().parse().unwrap(),
+                    target: name.parse().unwrap(),
                     kind: RowAlreadyExists,
                 });
             }
